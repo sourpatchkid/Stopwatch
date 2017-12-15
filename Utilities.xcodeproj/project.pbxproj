@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F7DB63741FE2D76800DE1565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63731FE2D76800DE1565 /* AppDelegate.swift */; };
-		F7DB63761FE2D76800DE1565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63751FE2D76800DE1565 /* ViewController.swift */; };
 		F7DB63791FE2D76800DE1565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DB63771FE2D76800DE1565 /* Main.storyboard */; };
 		F7DB637B1FE2D76800DE1565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB637A1FE2D76800DE1565 /* Assets.xcassets */; };
 		F7DB637E1FE2D76800DE1565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DB637C1FE2D76800DE1565 /* LaunchScreen.storyboard */; };
 		F7DB63891FE2D76900DE1565 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63881FE2D76900DE1565 /* UtilitiesTests.swift */; };
 		F7DB63941FE2D76900DE1565 /* UtilitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63931FE2D76900DE1565 /* UtilitiesUITests.swift */; };
+		F7DB63A21FE2DB7B00DE1565 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63A11FE2DB7B00DE1565 /* StopwatchViewController.swift */; };
+		F7DB63A41FE3B47B00DE1565 /* LapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63A31FE3B47B00DE1565 /* LapCell.swift */; };
+		F7DB63A61FE44C7E00DE1565 /* LapTimesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB63A51FE44C7E00DE1565 /* LapTimesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F7DB63701FE2D76800DE1565 /* Utilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DB63731FE2D76800DE1565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7DB63751FE2D76800DE1565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7DB63781FE2D76800DE1565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DB637A1FE2D76800DE1565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DB637D1FE2D76800DE1565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		F7DB638F1FE2D76900DE1565 /* UtilitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilitiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DB63931FE2D76900DE1565 /* UtilitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesUITests.swift; sourceTree = "<group>"; };
 		F7DB63951FE2D76900DE1565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DB63A11FE2DB7B00DE1565 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		F7DB63A31FE3B47B00DE1565 /* LapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCell.swift; sourceTree = "<group>"; };
+		F7DB63A51FE44C7E00DE1565 /* LapTimesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTimesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				F7DB63731FE2D76800DE1565 /* AppDelegate.swift */,
-				F7DB63751FE2D76800DE1565 /* ViewController.swift */,
 				F7DB63771FE2D76800DE1565 /* Main.storyboard */,
+				F7DB63A31FE3B47B00DE1565 /* LapCell.swift */,
+				F7DB63A11FE2DB7B00DE1565 /* StopwatchViewController.swift */,
+				F7DB63A51FE44C7E00DE1565 /* LapTimesTableViewController.swift */,
 				F7DB637A1FE2D76800DE1565 /* Assets.xcassets */,
 				F7DB637C1FE2D76800DE1565 /* LaunchScreen.storyboard */,
 				F7DB637F1FE2D76800DE1565 /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DB63761FE2D76800DE1565 /* ViewController.swift in Sources */,
+				F7DB63A41FE3B47B00DE1565 /* LapCell.swift in Sources */,
+				F7DB63A21FE2DB7B00DE1565 /* StopwatchViewController.swift in Sources */,
+				F7DB63A61FE44C7E00DE1565 /* LapTimesTableViewController.swift in Sources */,
 				F7DB63741FE2D76800DE1565 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
